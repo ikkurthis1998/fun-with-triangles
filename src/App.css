@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
-	background-color: rgba(255, 0, 0, 0.5);
-	background-size: cover;
-	height: 100vh;
-	color: white;
+	background-color: aqua;
+	margin: 0;
+}
+
+.app-container {
+	/* border: 1px solid; */
+	font-family: "Poppins", sans-serif;
+	color: black;
+	min-height: 90vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 10px;
 }

@@ -1,0 +1,30 @@
+.box-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+.box-row-container {
+	width: 100%;
+	display: flex;
+}
+
+.box-element {
+	border-radius: 5px;
+	border: 2px solid aqua;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	background-color: aliceblue;
+	color: black;
+	text-decoration: none;
+}
+
+.box-element:hover {
+	cursor: pointer;
+	font-weight: bold;
+	background-color: rgb(247, 234, 0);
+}
