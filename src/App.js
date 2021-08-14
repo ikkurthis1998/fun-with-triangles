@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AnglesCheck from "./AnglesCheck";
 import HypotenuseCalculator from "./HypotenuseCalculator";
 import NameTheTriangle from "./NameTheTriangle";
+import TrianglesProblems from "./TrianglesProblems";
 
 const App = () => {
 	return (
@@ -24,7 +25,7 @@ const App = () => {
 						<NameTheTriangle />
 					</Route>
 					<Route path="/trianglesProblems">
-						<h1>Triangle's Problems</h1>
+						<TrianglesProblems />
 					</Route>
 				</Switch>
 			</div>

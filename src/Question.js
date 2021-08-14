@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Question = ({ question, options, setSelectedAnswer }) => {
+const Question = ({ question, options, setAnswer }) => {
 	return (
 		<div className="question-container">
 			<p>
@@ -13,11 +13,18 @@ const Question = ({ question, options, setSelectedAnswer }) => {
 							className="option-container"
 							key={option}
 							onChange={(e) => {
-								setSelectedAnswer(e.target.value);
+								setAnswer(e.target.value);
 							}}
 						>
-							<input type="radio" value={option} id={option} name={question} />
-							<label htmlFor={option}>{option}</label>
+							<label htmlFor={question + option}>
+								<input
+									type="radio"
+									value={option}
+									id={question + option}
+									name={question}
+								/>
+								{option}
+							</label>
 						</div>
 					);
 				})}

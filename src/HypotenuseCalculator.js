@@ -28,18 +28,22 @@ const HypotenuseCalculator = () => {
 			</p>
 			<label htmlFor="a">a</label>
 			<input
+				className="input"
 				id="a"
 				type="number"
 				onChange={(e) => setA(parseInt(e.target.value))}
 			/>
 			<label htmlFor="b">b</label>
 			<input
+				className="input"
 				id="b"
 				type="number"
 				onChange={(e) => setB(parseInt(e.target.value))}
 			/>
-			<button onClick={() => calculateH()}>Calculate</button>
-			<p>Hypotenuse = {result}</p>
+			<button onClick={() => calculateH()} className="calculate">
+				Calculate
+			</button>
+			{result && <p>Hypotenuse = {result}</p>}
 		</div>
 	);
 };

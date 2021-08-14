@@ -48,7 +48,9 @@ const AnglesCheck = () => {
 				id="angle-3"
 				onChange={(e) => setAngle3(parseInt(e.target.value))}
 			/>
-			<button onClick={() => checkAngles()}>Check</button>
+			<button onClick={() => checkAngles()} className="check-button">
+				Check
+			</button>
 			<p>{result}</p>
 		</div>
 	);
