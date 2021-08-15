@@ -26,6 +26,11 @@ const Intro = () => {
 						Triangle's Problems
 					</Link>
 				</div>
+				<div className="box-row-container">
+					<Link to="/calculateArea" className="box-element">
+						Calculate Area
+					</Link>
+				</div>
 			</div>
 		</>
 	);

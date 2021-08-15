@@ -6,6 +6,7 @@ import AnglesCheck from "./AnglesCheck";
 import HypotenuseCalculator from "./HypotenuseCalculator";
 import NameTheTriangle from "./NameTheTriangle";
 import TrianglesProblems from "./TrianglesProblems";
+import CalculateArea from "./CalculateArea";
 
 const App = () => {
 	return (
@@ -26,6 +27,9 @@ const App = () => {
 					</Route>
 					<Route path="/trianglesProblems">
 						<TrianglesProblems />
+					</Route>
+					<Route path="/calculateArea">
+						<CalculateArea />
 					</Route>
 				</Switch>
 			</div>
